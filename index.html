@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uma simples ferramenta para criar senhas fortes e QRCodes">
+    <title>PasswordSecurity</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        PasswordSecurity<i class="fa-solid fa-lock"></i>
+    </header>
+    <section>
+        <div class="container">
+            <div class="check">
+                <p>
+                    Números:
+                    <input type="checkbox" id="numberCheck" checked style="margin-left: 187px;">
+                </p>
+                <p>
+                    Maiúsculas:
+                    <input type="checkbox" id="upperCheck" checked style="margin-left: 170px;">
+                </p>
+                <p>
+                    Minúsculas:
+                    <input type="checkbox" id="lowerCheck" checked style="margin-left: 170px;">
+                </p>
+                <p>
+                    Simbolos:
+                    <input type="checkbox" id="symbolCheck" checked style="margin-left: 185px;">
+                </p>
+            </div>
+            <p>
+                Caracteres:
+                <input type="number" id="caracs" value="15" min="5" max="30" style="margin-left: 107px;">
+            </p>
+            <button id="generate">Gerar Senha</button>
+            <p id="resposta"></p>
+        </div>
+        <div class="container2">
+            <p>Cole a sua senha aqui:</p>
+            <input type="text" id="textoSenha">
+            <button id="qrGenerate">Gerar QRCode</button>
+            <div class="qrBox">
+                <img id="qrcodeimg">
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/45a1c2ef02.js" crossorigin="anonymous"></script>
+</body>
+</html>
